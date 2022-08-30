@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A JSFuck CLI Toolchain for Compiling regular JS to JSFuck inspired by JSFuck by Martin Kleppe",
   "main": "index.js",
+  "bin": {
+    "jsf": "./index.js"
+  },
   "scripts": {
     "test": "mocha --reporter-option maxDiffSize=0"
   },
@@ -24,6 +27,7 @@
     "mocha": "^10.0.0"
   },
   "dependencies": {
+    "g": "^2.0.1",
     "yargs": "^17.5.1"
   }
 }
